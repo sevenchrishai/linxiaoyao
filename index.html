@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ms-controller='index'>
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>{{title}}</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="styles/pages/index.css">
 </head>
-<body>
-<h1>林小瑶</h1>
+<body class="ms-controller" ms-controller='index'>
+<canvas id="canvas" width="800" height="500"></canvas>
+<div class="word">
+    明月几时有 <br>
+    把酒问青天 <br>
+    <br> <br> <br>
+    <br> <br> <br>
+    <br>
+    不知天上宫阙 <br>
+    今夕是何年 <br>
+
+
+
+</div>
+
+
+<script src="scripts/libs/require.js"></script>
+<script src="scripts/common/globalConfig.js"></script>
+<script src="scripts/pages/index.js"></script>
 </body>
 </html>

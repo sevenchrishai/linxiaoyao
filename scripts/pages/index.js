@@ -31,11 +31,6 @@ require(['jquery','avalon'],
                             var canvas = document.querySelector('canvas');
                             var ctx = canvas.getContext('2d');
 
-                            var _win = $('#canvas');
-                            _win.on('click',function () {
-                                console.log("click")
-                            })
-
                             canvas.width = window.innerWidth;
                             canvas.height = window.innerHeight;
 

@@ -3,22 +3,50 @@ html {
     position: relative;
     margin: 0;
     padding: 0;
-    background: black url("../../images/qixi_bg.jpg") center center no-repeat;
+    background: black;
+}
+.content{
+    position: relative;
+    background: url("../../images/qixi_bg.jpg") center center no-repeat;
     background-size: 100%;
+}
+.black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    background-size: 100%;
+    -webkit-transition-property: all;
+    -webkit-transition-duration:1s;
+    -webkit-transition-delay:0.5s;
+    -webkit-transition-timing-function:ease-in-out;
+    transition-property:all;
+    transition-duration:2s;
+    transition-delay:0.2s;
+    transition-timing-function:ease-in-out;
+}
+.black:hover{
+    background: rgba(0,0,0,0);
+}
+.black:active{
+    background: rgba(0,0,0,0);
 }
 canvas {
     margin: 0 auto;
 }
 .word{
     position: fixed;
-    width: 200px;
-    line-height: 50px;
-    top: 100px;
+    width: 150px;
+    line-height: 40px;
+    top: 50px;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -75px;
     color: #fff;
-    font-size: 14px;
-    z-index: 1;
+    font-size: 24px;
+    font-family:'yuweif13db7c923e1dc5c';"
+    z-index: 2;
     text-align: center;
     opacity: 0;
     -webkit-transition-property: all;
@@ -27,9 +55,12 @@ canvas {
     -webkit-transition-timing-function:ease-in-out;
     transition-property:all;
     transition-duration:2s;
-    transition-delay:0.5s;
+    transition-delay:0.2s;
     transition-timing-function:ease-in-out;
 }
 .word:hover{
+    opacity: 1;
+}
+.word:active{
     opacity: 1;
 }
